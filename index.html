@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#123d30">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Aluguel Fácil">
+  <title>Aluguel Fácil</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css?v=1">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-logo" aria-hidden="true">🪑🎤🚚</div>
+        <div>
+          <h1>Aluguel Fácil</h1>
+          <p>Mesas, karaokê e fretes</p>
+        </div>
+      </div>
+      <button class="icon-btn" id="settingsBtn" aria-label="Configurações">⚙️</button>
+    </header>
+
+    <main id="main"></main>
+
+    <nav class="bottom-nav" aria-label="Navegação principal">
+      <button data-view="home" class="nav-btn active"><span>📅</span><b>Início</b></button>
+      <button data-view="orders" class="nav-btn"><span>📋</span><b>Pedidos</b></button>
+      <button data-view="clients" class="nav-btn"><span>👥</span><b>Clientes</b></button>
+      <button data-view="cash" class="nav-btn"><span>💼</span><b>Caixa</b></button>
+    </nav>
+  </div>
+
+  <div id="modalRoot"></div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="app.js?v=1" defer></script>
+</body>
+</html>
